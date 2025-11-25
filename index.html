@@ -17,10 +17,10 @@
   <div class="nav">
     <div class="left">
       <a id="name" href="#">Tenjeeb K. C.</a>
-      <a class="general" href="">Home</a>
-      <a class="general" href="">About</a>
-      <a class="general" href="">Experience</a>
-      <a class="general" href="">Projects</a>
+      <a class="general" href="#container">Home</a>
+      <a class="general" href="#about">About</a>
+      <a class="general" href="#exp">Experience</a>
+      <a class="general" href="#projects">Projects</a>
     </div>
     <div class="right">
       <a href="">Email</a>
@@ -29,14 +29,15 @@
     </div>
   </div>
 
-  <!-- body part -->
-  <div class="container">
-  <div class="introduction">
+  <!-- Introduction -->
+  <div id="container">
+    <div class="introduction">
       <h1>hi,
         <span style="color: #64ffda ;">tenjeeb</span> here.
       </h1>
 
-      <p>I’m an aspiring web developer who loves creating clean, accessible interfaces and exploring how great user experiences are built.
+      <p>I’m an aspiring web developer who loves creating clean, accessible interfaces and exploring how great user
+        experiences are built.
         I’m continuously working on projects to sharpen my skills and move toward full-stack development.</p>
     </div>
 
@@ -44,29 +45,67 @@
       <a href="">Say hi!</a>
     </div>
 
-
-    <div class="about">
+    <!-- About me -->
+    <div id="about">
       <div class="about_me">
-        <h1>/ about me</h1>
-        <p class="para" >I have completed my bachelor's in Computer Networking and IT Security from Islington College, and I am currently exploring web devlopement. I am
+        <h1>/ about me &nbsp<span class="underline">--------------------</span></h1>
+        <p class="para">I have completed my bachelor's in Computer Networking and IT Security from Islington College,
+          and I am currently exploring web devlopement. I am
           devloping my skills in HTML, CSS, and JavaScript, and experimenting with modern frameworks
           as I continue to grow.</p>
-          <p class="para" >Here are some of my skills:</p>
-          <ul class="para" >
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>Linux</li>
-            <li>Cisco Networking</li>
-          </ul>
-        </div>
-        <div class="photo">
-          <img src="photo.jpg" alt="">
-        </div>
+        <p class="para">Here are some of my skills:</p>
+        <ul class="para">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Python</li>
+          <li>Linux</li>
+          <li>Cisco Networking</li>
+        </ul>
       </div>
+      <div class="photo">
+        <img src="photo.jpg" alt="">
+      </div>
+    </div>
+    <!-- Experience -->
+    <div id="exp">
+      <div class="experience">
+        <h1>/ experience &nbsp<span class="underline">--------------------</span></h1>
+        <h3>Moru Digital Wallet :</h3>
+        <p class="para">During my 3 months internship at Moru Digital Wallet, I contributed to strengthening the
+          platform’s
+          security by implementing security protocols and monitoring network activity for potential threats. I also
+          supported the development of new platform features through hands-on work in various devlopment projects.
+          Additionally, I regularly delivered internal sessions on maintaining cyber hygiene to promote secure practices
+          accross the office. </p>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div id="projects">
+      <h1>/ projects &nbsp<span class="underline">--------------------</span></h1>
+      <div class="my-projects">
+        <div class="list">
+          <h3>Vulnerable Code Scanner</h3>
+          <p>A web based vulnerability scanning tool that scans Python code for any known OWASP Top 10 vulnerabilities
+            and provides secure coding example..</p>
+        </div>
+        <div class="list">
+          <h3>Spotify Clone</h3>
+        </div>
+        <div class="list">
+          <h3>Personal AI Voice Assistance</h3>
+        </div>
+
+      </div>
+    </div>
+
 
 
   </div>
+
+
+
 </body>
+
 </html>

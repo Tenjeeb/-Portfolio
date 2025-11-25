@@ -5,8 +5,9 @@ body {
 }
 
 :root {
-  --color: rgba(190, 215, 231, 0.855);
+  --color: rgb(190, 215, 231);
   --sec-color: #64ffda;
+  --bg-color: #0a192f;
 }
 
 canvas.p5Canvas {
@@ -24,20 +25,23 @@ canvas.p5Canvas {
 /* navigation */
 .nav {
   display: flex;
-  align-items: center;
-  align-items: center;
   justify-content: space-around;
-  gap: 40px;
-  padding-top: 15px;
+  gap: 250px;
+  padding: 20px 0;
   font-size: 14px;
-  font-weight: 600;
-  position: relative;
-  z-index: 1;
+  font-weight: 700;
+  position: fixed;
+  z-index: 10;
+  background: var(--bg-color);
+  left: 0;
+  right: 0;
+  margin-top: -10px;
+  
 }
 
 /* left side */
 .left a {
-  color: rgba(255, 255, 255, 0.693);
+  color: var(--color);
   padding: 5px;
   text-decoration: none;
 }
@@ -58,14 +62,14 @@ canvas.p5Canvas {
 }
 
 /* Introduction container */
-.container {
+#container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   position: relative;
   z-index: 1;
-  padding-top: 350px;
+  padding-top: 375px;
 
 }
 
@@ -104,8 +108,9 @@ canvas.p5Canvas {
   background-color: #64ffdb18;
 }
 
-.about {
-  padding-top: 90px;
+/* about */
+#about {
+  padding-top: 115px;
   display: flex;
 
 }
@@ -114,8 +119,21 @@ canvas.p5Canvas {
   max-width: 680px;
 }
 
-.about h1 {
+.about_me h1{
   font-size: 35px;
+  padding: 10px 0;
+}
+
+
+
+
+
+
+
+.underline{
+  opacity: 0.2;
+  font-weight: 100;
+  color: var(--color) ;
 }
 
 .about_me ul {
@@ -134,13 +152,62 @@ canvas.p5Canvas {
 
 }
 
+
+
+
 .photo img{
-  width: 250px;
+  width: 280px;
   object-fit: contain;
   border-radius: 10px;
-  margin: 95px 35px;
+  margin: 100px 35px;
   transition: all 0.3s ease;
 }
 .photo img:hover{
  transform: scale(1.03)
+}
+
+/* experience */
+#exp {
+  padding-top: 10px;
+  padding-right: 50px;
+
+}
+
+.experience {
+  max-width: 980px;
+  margin-top: 0;
+
+}
+.experience h1{
+  font-size: 35px;
+    padding: 10px 0;
+}
+.experience h3 {
+ color: var(--sec-color);
+}
+.experience p {
+ padding-right: 75px;
+}
+
+/* projects */
+#projects{
+  padding-top: 60px;
+}
+#projects h1{
+  font-size: 35px;
+    padding: 10px 0;
+}
+
+.my-projects{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 1050px;
+
+}
+.my-projects .list{
+  border: 1px solid white;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+
 }
