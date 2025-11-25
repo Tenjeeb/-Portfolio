@@ -128,11 +128,6 @@ canvas.p5Canvas {
 }
 
 
-
-
-
-
-
 .underline {
   opacity: 0.2;
   font-weight: 100;
@@ -154,9 +149,6 @@ canvas.p5Canvas {
   width: 300px;
 
 }
-
-
-
 
 .photo img {
   width: 280px;
@@ -185,11 +177,12 @@ canvas.p5Canvas {
 
 .experience h1 {
   font-size: 35px;
-  padding: 10px 0;
+  padding: 12px 0;
 }
 
 .experience h3 {
   color: var(--sec-color);
+  margin-bottom: -5px;
 }
 
 .experience p {
