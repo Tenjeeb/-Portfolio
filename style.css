@@ -71,7 +71,8 @@ canvas.p5Canvas {
   flex-direction: column;
   position: relative;
   z-index: 1;
-  padding-top: 375px;
+  padding-top: 390px;
+
 
 }
 
@@ -81,13 +82,35 @@ canvas.p5Canvas {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 20px;
+
 }
+
 
 .introduction h1 {
   margin-bottom: 0;
-  font-size: 60px;
+  font-size: 70px;
   font-weight: 500;
+  /* Animation part */
+  overflow: hidden;
+  border-right: 4px solid var(--sec-color);
+  white-space: nowrap;
+  width: 0;
+  animation:
+    typing 2.5s steps(25, end) forwards,
+    blink-caret 1s ease-in-out forwards 2.5s;
 }
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 85%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: var(--sec-color); }
+  100% { border-color: transparent; }
+}
+
 
 .introduction p {
   font-size: 18px;
@@ -113,7 +136,7 @@ canvas.p5Canvas {
 
 /* about */
 #about {
-  padding-top: 115px;
+  padding-top: 90px;
   display: flex;
 
 }
@@ -154,7 +177,7 @@ canvas.p5Canvas {
   width: 280px;
   object-fit: contain;
   border-radius: 10px;
-  margin: 100px 35px;
+  margin: 120px 30px 0px 15px;
   transition: all 0.3s ease;
 }
 
@@ -164,14 +187,14 @@ canvas.p5Canvas {
 
 /* experience */
 #exp {
-  padding-top: 10px;
-  padding-right: 50px;
+  padding-right: 36px;
+  padding-bottom: 30px;
 
 }
 
 .experience {
   max-width: 980px;
-  margin-top: 0;
+  padding-top: 45px;
 
 }
 
@@ -191,7 +214,7 @@ canvas.p5Canvas {
 
 /* projects */
 #projects {
-  padding-top: 60px;
+  padding-top: 15px;
 }
 
 #projects h1 {

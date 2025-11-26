@@ -4,4 +4,22 @@ font-size: 18px;
   padding-bottom: 5px;
   letter-spacing: 1px; }
 
+
+/* fade animation */
+  .fade-up {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeUpAnimation 1s ease forwards; /*animation goes to original form, so forwards keeps it like it is */
+  animation-delay: .2s; /* optional delay */
+}
+
+@keyframes fadeUpAnimation {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
   
