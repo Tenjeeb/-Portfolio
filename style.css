@@ -334,6 +334,21 @@ footer {
 
 @media (max-width: 1200px) {
 
+  #container p{
+      font-size: 14px;
+    
+  }
+
+  #container li{
+    font-size: 14px;
+  }
+
+  
+
+  #container h1{
+    font-size: 30px;
+  }
+
   #container{
     justify-content: center;
     align-items: center;
@@ -364,7 +379,6 @@ footer {
   margin-top: -40px;
 }
 .introduction p{
-  font-size: 14px;
   padding-bottom: 30px;
 }
 
@@ -382,5 +396,46 @@ footer {
     width: 24px;
 }
 
+.about_me h1 {
+    font-size: 30px;
+    margin-bottom: 0;
+
+}
+
+
+#about{
+  max-width: 600px;
+}
+
+.photo img {
+    display: none;
+}
+
+.underline{
+  display: none;
+}
+
+#exp{
+  max-width: 600px;
+  padding: 0;
+}
+
+.experience p {
+    padding-right: 10px;
+}
+
+#projects{
+  max-width: 600px;
+}
+
+.my-projects{
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+}
+
+.my-projects .list{
+  margin: 10px 10px;
+}
 
 }
