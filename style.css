@@ -358,7 +358,7 @@ footer {
 @media (max-width: 1200px) {
 
   #container{
-    margin: 0 30px;
+    margin: 0 25px;
   }
  
   #container li{
@@ -387,13 +387,14 @@ footer {
   top: 25px;
 }
 .heading{
-  max-width: 400px;
+  max-width: 285px;
   margin-top: 70px;
 
 }
 .heading h1{
 font-size: 38px;
  margin-top: -120px;
+ padding-left: 15px;
 }
 .introduction p{
   padding-bottom: 25px;
@@ -442,7 +443,7 @@ font-size: 38px;
 #exp{
   max-width: 600px;
   padding: 0;
-  padding-top: 50px;
+  padding-top: 30px;
 }
 .experience h1{
   font-size: 28px;
