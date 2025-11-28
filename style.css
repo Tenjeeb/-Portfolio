@@ -76,6 +76,7 @@ canvas.p5Canvas {
   position: relative;
   z-index: 1;
   padding-top: 390px;
+
 }
 
 .introduction,
@@ -328,4 +329,57 @@ footer {
   letter-spacing: 1px;
   font-weight: 400;
   margin: 5px;
+}
+
+
+@media (max-width: 1200px) {
+
+  #container{
+    justify-content: center;
+    align-items: center;
+  }
+  .left{
+    display: none;
+  }
+
+  .nav{
+    justify-content: flex-end;
+  }
+
+  .right{
+    padding-right: 20px;
+  }
+
+  canvas.p5Canvas {
+  width: 300px !important;
+  height: 300px !important;
+  top: 25px;
+}
+.heading{
+  max-width: 400px;
+
+}
+.heading h1{
+  font-size: 45px;
+  margin-top: -40px;
+}
+.introduction p{
+  font-size: 14px;
+}
+
+.introduction{
+  max-width: 450px;
+}
+
+.mail a {
+    padding: 12px 12px;
+    padding-left: 46px;
+}
+
+.mail img {
+    left: 16px;
+    width: 24px;
+}
+
+
 }
