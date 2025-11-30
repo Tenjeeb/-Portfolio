@@ -147,7 +147,7 @@ img {
 
 .mail a {
   padding: 20px 25px;
-  border: 2px solid var(--sec-color);
+  border: 1.5px solid var(--sec-color);
   color: var(--color);
   text-decoration: none;
   font-weight: bold;
